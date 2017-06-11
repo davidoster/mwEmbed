@@ -689,7 +689,8 @@
 			this.triggerHelper( 'embedPlayerError' , [data] );
 		} ,
 		onId3tag: function (id3Tag) {
-			this.triggerHelper('onId3Tag', id3Tag);
+			var id3TagObj=JSON.parse(id3Tag);
+			this.triggerHelper('onId3Tag', id3TagObj);
 		},
 
 
