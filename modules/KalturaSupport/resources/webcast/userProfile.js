@@ -19,7 +19,7 @@
         // get an hash code from a ks
         getKSHash: function(ks) {
             var hash = 0, i, chr, len;
-            if (ks.length === 0){
+            if (!ks || ks.length === 0){
                 return hash;
             }
             for (i = 0, len = ks.length; i < len; i++) {
